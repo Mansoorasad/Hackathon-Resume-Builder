@@ -1,0 +1,180 @@
+*{
+    margin:0
+}
+body {
+    background:#363636;
+    margin:0 !important;
+    padding:0;
+    box-sizing:border-box;
+    color: #fff;
+    font-family: "Quicksand", system-ui;
+}
+
+
+section.personal-info {
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.info-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items:center;
+}
+
+.profile img {
+    border-radius:50%;
+    background-color: #0b0b0b;
+    border: 10px solid #3d3d3d;
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
+    width: 250px;
+}
+
+.detail h2 {
+    font-size:50px;
+    line-height:70px;
+}
+.detail h1{
+    font-weight:300;
+}
+.detail p{
+    font-size:16px;
+    line-height:26px;
+    margin-bottom:30px
+}
+.inner-btn a{
+    background:gold;
+    border-radius:30px;
+    padding:10px 20px;
+    margin-right:10px;
+    text-decoration:none;
+    color:#000;
+    border:2px solid gold;
+}
+.inner-btn a:hover{
+    background:#ffd70000;
+    color:#ffffff;
+}
+header {
+    margin: auto;
+    text-align: center;
+    background: gold;
+    padding: 5px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info p{
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    font-size:20px;
+    margin-right:30px;
+}
+
+.contact-info a{
+    color:#000;
+    text-decoration:none;
+    font-weight:400;
+    font-size:18px;
+    margin-right:30px;
+}
+.edu-wrapper,.skills {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.edu-wrapper h3,
+.skills h3{
+    font-size:35px;
+    padding-bottom:30px
+}
+.edu-wrapper h4{
+    font-size:20px;
+    color:gold;
+    font-weight:600;
+    padding-bottom: 40px;
+}
+.edu-wrapper span{
+    font-size:18px;
+    color:#fff
+}
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+.accordion-head {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: gold;
+}
+
+.accordion-txt {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-txt.show {
+    display: block;
+}
+.accordion-txt span{
+    border:1px solid;
+    padding:5px 10px;
+    border-radius:50px;
+}
+.accordion {
+    padding-bottom: 40px;
+}
+.accordion-head{
+    position:relative;
+}
+.accordion-head::before {
+    content:'+';
+    font-size:30px;
+    position:absolute;
+    right:15px;
+    top:10%;
+    
+    
+}
+@media(max-width:1100px){
+    .personal-info, .edu-info,.skills{
+        padding:0 40px;
+    }
+}
+@media(max-width:767px){
+    .contact-info {
+        flex-direction: column;
+    }
+    .info-wrapper {
+            flex-direction: column;
+    }
+    .contact-info p {
+        font-size: 18px;
+        margin-right: 0px;
+    }
+    .contact-info p a{
+        font-size: 16px;
+        margin-right: 0px;
+    }
+    .personal-info, .edu-info,.skills{
+        padding:0 25px;
+    }
+    .detail h2 {
+        font-size: 42px;
+    }
+
+.accordion-txt span {
+    padding: 8px 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+}
